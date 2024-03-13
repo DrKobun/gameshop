@@ -1,0 +1,57 @@
+body
+{
+    padding:1rem;  
+}
+
+.thumbnail
+{
+	width: 100%;
+	height: 360px;	
+	object-fit: cover;
+	object-position: top;
+	border-radius: 1.2rem;              
+  background-size:cover;
+	background-color: yellow;
+}
+
+.detalhes-btn
+{
+	width:100%;
+	height: auto;
+	background-color:#494949;
+	color:#FFF;
+	padding: .8rem 1.5rem;
+	text-align:center;
+	font-size:1.2rem;
+	border-radius:.4rem;
+}
+
+.home-produto-item:hover > .detalhes-btn
+{
+
+	background-color:rgb(212, 76, 76);
+}
+
+.home-produto-item:hover {
+	text-decoration:none;
+	cursor:pointer;
+	color:rgb(212, 76, 76);
+	opacity:0.92;
+}
+
+.home-produto-item {
+	text-decoration:none;
+	color:#333;
+}
+
+.leagueoflegends{
+	height: 100px;
+	width: 100px;
+	box-shadow: 10px grey;
+	object-fit: cover;
+	object-position: top;
+}
+
+.adiciona{
+	width: 100%;
+}
