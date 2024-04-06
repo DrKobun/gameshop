@@ -34,7 +34,7 @@
         <div class="container">
 			
 			<a class="home-produto-item col-4 float-left px-2" href="leagueoflegends.php">
-				<div class="thumbnail" style="background-image:url('https://media.discordapp.net/attachments/838158375304429598/1175833453925781604/lol.webp?ex=656cab3d&is=655a363d&hm=6ef7fbae62c92e844d42065062c982e59221592a8d9a15b706eb89b990429393&=&width=451&height=676')">
+				<div class="thumbnail" style="background-image:url('images/lol.webp')">
 				</div>
 				<h2></h2>
 				<p></p>

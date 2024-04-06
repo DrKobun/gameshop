@@ -1,10 +1,24 @@
+<?php 
+	
+	if(!isset($_SESSION))
+	{
+		
+		$ok = @session_start();
+		if($ok)
+		{
+		session_regenerate_id(true); // replace the Session ID
+		//session_start(); 
+		}
+	}
+	include('protect.php');
+?>
+
+
 <html lang="pt-BR">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 
     <title>Gameshop</title>
@@ -24,13 +38,16 @@
 					<a href="listar.php">
 						<img src="images/produtos-btn.png" alt="">
 					</a>
-					</div>
+					<p>
+						<a href="logout.php">Encerrar sessão</a>
+					</p>
+				</div>
 			</div>
     <!-- </div> -->
 	</section>
-       
 	<section id="header">
-    <div class="container">
+		<div class="container">
+        <h1>BEM VINDO <?php $nome = $_SESSION['nome']; echo $nome; ?></h1>
 			<div class="col-12 mt-5">
 					<p> <a href="">Principal</a>  >  <a href="">Produtos</a> > <a href="">Games</a></p>         
 			</div>
@@ -40,24 +57,21 @@
     <div class="container">
 			
 			<a class="home-produto-item col-4 float-left px-2" href="leagueoflegends.php">
-				<div class="thumbnail" style="background-image:url('https://cdn.discordapp.com/attachments/600174672297984010/1215727652321890304/lol.webp?ex=65fdcd9b&is=65eb589b&hm=dc0a1e0ab5c2f7bdaf12837650921ebb9d4a7438e7523034de8cdec51c9628c3&=&width=451&height=676')">
-				</div>
+			<div class="thumbnail" style="background-image: url('images/lol.webp');"></div>
 				<h2>League of Legends</h2>
 				<p>R$99,99</p>
 				<div class="detalhes-btn"> Ver detalhes </div>
 			</a>
 
 			<a class="home-produto-item col-4 float-left px-2" href="callofduty.php">
-				<div class="thumbnail" style="background-image:url('https://cdn.discordapp.com/attachments/600174672297984010/1215727667467391006/callofduty.jpg?ex=65fdcd9f&is=65eb589f&hm=93aeebb4abc6c0d19b6122bf514c07709d11ec083f5fbe2b27f811e93ad9a352&=')" >
-				</div>
+			<div class="thumbnail" style="background-image: url('images/callofduty.jpg');"></div>
 				<h2>Call of Duty: Modern</h2>
 				<p>R$399,99</p>
 				<div class="detalhes-btn"> Ver detalhes </div>
 			</a>
 
 			<a class="home-produto-item col-4 float-left px-2" href="worldwarz.php">
-				<div class="thumbnail" style="background-image:url('https://cdn.discordapp.com/attachments/600174672297984010/1215727635456589854/worldwarz.webp?ex=65fdcd97&is=65eb5897&hm=f7ac9501fd123efa4bdb3ee6d5ed1d39b49d8348a5f26ee5156d566af8dde4cc&=&width=535&height=676')" >
-				</div>
+			<div class="thumbnail" style="background-image: url('images/worldwarz.webp');"></div>
 				<h2>World War: Z</h2>
 				<p>R$159,99</p>
 				<div class="detalhes-btn"> Ver detalhes </div>	
@@ -83,6 +97,3 @@
     -->
   	</body>
 	</html>
-    
-    
-

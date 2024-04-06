@@ -34,7 +34,7 @@
         <div class="container">
 			
 			<div class="home-produto-item col-4 float-left px-2" href="leagueoflegends.php">
-				<div class="thumbnail" style="background-image:url('https://media.discordapp.net/attachments/838158375304429598/1175833453141426206/callofduty.jpg?ex=656cab3d&is=655a363d&hm=0c3fdcb0f46075251c26d7186e0d0f62f6dd423735e7333cafac2ffc366da799&=')">
+				<div class="thumbnail" style="background-image:url('images/callofduty.jpg')">
 				</div>
 				<h2></h2>
 				<p></p>

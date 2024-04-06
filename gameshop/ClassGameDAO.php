@@ -1,5 +1,5 @@
 <?php
-require_once 'conexao.php';
+require_once 'Conexao.php';
 class ClassGameDAO 
 {
    		public function cadastrar($novoGame) 
